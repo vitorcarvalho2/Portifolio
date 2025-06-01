@@ -6,7 +6,7 @@ function About() {
       sx={{
         padding: 2,
         color: "white",
-        minHeight: "100vh",
+        minHeight: "30vh",
         display: "flex",
         flexDirection: "column",
         justifyContent: "center",

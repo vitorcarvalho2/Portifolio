@@ -16,10 +16,16 @@ function App() {
           width: "100%",
         }}
       >
-        <Header />
-        <Home />
+        <Box
+          sx={{
+            minHeight: "10vh",
+          }}
+        >
+          <Header />
+        </Box>
 
         <Box>
+          <Home />
           <Box id="about">
             <About />
           </Box>

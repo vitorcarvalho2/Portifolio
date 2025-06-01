@@ -12,7 +12,7 @@ export function Header() {
         color: "white",
         width: "100%",
         position: "fixed",
-        height: "100",
+        zIndex: 100,
         backgroundColor: Colors.secondaryColor,
       }}
     >

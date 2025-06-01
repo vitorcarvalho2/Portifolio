@@ -1,51 +1,102 @@
 import { Box, Typography } from "@mui/material";
 import profileImage from "../../assets/images/profile.png";
+import Colors from "../../utils/colors";
+
 function Home() {
   return (
     <Box
       sx={{
         padding: 2,
         color: "white",
-        minHeight: "100vh",
+        marginTop: "20vh",
         display: "flex",
-        flexDirection: "column",
         justifyContent: "center",
-        width: "80%",
-        margin: "auto",
+        alignItems: "center",
+        position: "relative",
       }}
     >
       <Box
         sx={{
-          textAlign: "flex-end",
           display: "flex",
-          justifyContent: "space-between",
-          flexDirection: "row",
-          alignContent: "center",
-          alignItems: "flex-end",
-          margin: "auto",
-
+          alignItems: "center",
+          gap: 4,
+          position: "relative",
+          width: "80%",
         }}
       >
-        <Box>
-          <Typography variant="h6" gutterBottom marginY={3}>
-            Olá me chamo Vitor!
-          </Typography>
-          <img
-            src={profileImage}
-            alt="Vitor"
-            style={{
-              width: "200px",
-              height: "200px",
-              borderRadius: "50%",
-              objectFit: "cover",
+        <Box
+          sx={{
+            borderRadius: "50%",
+            width: "250px",
+            height: "250px",
+            background: `radial-gradient(circle, ${Colors.secondaryColor} 0%, ${Colors.backgroundColor} 100%)`,
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            overflow: "hidden",
+            position: "relative",
+          }}
+        >
+          <Box
+            borderRadius="50%"
+            sx={{
+              width: "210px",
+              height: "210px",
+              backgroundColor: Colors.lightColor,
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              overflow: "hidden",
             }}
-          />
+          >
+            <img
+              src={profileImage}
+              alt="Vitor"
+              style={{
+                width: "200px",
+                height: "200px",
+                borderRadius: "50%",
+                objectFit: "cover",
+              }}
+            />
+          </Box>
         </Box>
-        <Typography variant="h5" gutterBottom marginY={3} width={"50%"} alignContent={"space-evenly"}>
-          Este perfil é dedicado a publicar alguns projetos individuais como desenvolvedor.
-        </Typography>
+
+        <Box
+          sx={{
+            position: "absolute",
+            top: "1%",
+            left: "25%",
+          }}
+        >
+          <Typography variant="h6" gutterBottom>
+            Hi there! My name is{" "}
+            <span style={{ color: Colors.lightColor, fontWeight: "bold" }}>
+              Vitor
+            </span>
+          </Typography>
+        </Box>
+
+        <Box
+          sx={{
+            margin: "auto",
+            width: "50%",
+          }}
+        >
+          <Typography
+            variant="h5"
+            gutterBottom
+            sx={{
+              textAlign: "center",
+            }}
+          >
+            Este perfil é dedicado a publicar alguns projetos individuais como
+            desenvolvedor.
+          </Typography>
+        </Box>
       </Box>
     </Box>
   );
 }
+
 export default Home;
