@@ -50,15 +50,16 @@ Estrutura do Projeto
 
 A estrutura de pastas está organizada da seguinte forma:
 
-/
-├── public/          # Arquivos públicos (favicon, index.html, etc.)
-├── src/             # Código-fonte do projeto
-│   ├── components/   # Componentes reutilizáveis (Header, Footer, etc.)
-│   ├── pages/        # Páginas principais (Home, Sobre, Projetos, etc.)
-│   ├── utils/        # Arquivos utilitários (temas, cores, etc.)
-│   ├── App.js        # Arquivo principal do React
-│   └── index.js      # Ponto de entrada do React
-└── package.json   # Gerenciador de dependências
+
+├── public/          # Arquivos públicos (favicon, index.html, etc.)  
+├── src/             # Código-fonte do projeto  
+│   ├── components/   # Componentes reutilizáveis (Header, Footer, etc.)  
+│   ├── pages/        # Páginas principais (Home, Sobre, Projetos, etc.)  
+│   ├── utils/        # Arquivos utilitários (temas, cores, etc.)  
+│   ├── App.js        # Arquivo principal do React  
+│   └── index.js      # Ponto de entrada do React  
+└── package.json      # Gerenciador de dependências  
+
 
 Recursos e Funcionalidades
 
