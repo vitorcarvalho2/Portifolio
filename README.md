@@ -1,70 +1,71 @@
-# Getting Started with Create React App
+Meu Portfólio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Bem-vindo ao repositório do meu portfólio pessoal! Este projeto foi desenvolvido para apresentar minhas habilidades, experiências e projetos de forma visual e interativa.
 
-## Available Scripts
+Sobre o Projeto
 
-In the project directory, you can run:
+Este portfólio foi construído utilizando React e Material-UI (MUI) para criar uma interface moderna e responsiva. Ele inclui seções como:
 
-### `npm start`
+Sobre Mim: Uma breve descrição da minha formação e objetivos.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Projetos: Uma galeria dos meus principais trabalhos com links para visualização.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Contato: Links para minhas redes sociais e um formulário para entrar em contato.
 
-### `npm test`
+Tecnologias Utilizadas
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+React: Biblioteca JavaScript para construção da interface do usuário.
 
-### `npm run build`
+Material-UI: Framework para componentes estilizados e responsivos.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+CSS Módulos: Personalização do estilo com foco em modularidade.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+JavaScript (ES6+): Lógica do projeto e manipulações interativas.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Como Executar o Projeto
 
-### `npm run eject`
+Siga as etapas abaixo para executar este projeto localmente:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Clone o repositório:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+git clone https://github.com/seu-usuario/seu-portifolio.git
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Navegue até o diretório do projeto:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+cd seu-portifolio
 
-## Learn More
+Instale as dependências:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+npm install
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Execute o servidor de desenvolvimento:
 
-### Code Splitting
+npm start
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Abra o navegador e acesse:
 
-### Analyzing the Bundle Size
+http://localhost:3000
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Estrutura do Projeto
 
-### Making a Progressive Web App
+A estrutura de pastas está organizada da seguinte forma:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+/
+├── public/          # Arquivos públicos (favicon, index.html, etc.)
+├── src/             # Código-fonte do projeto
+│   ├── components/   # Componentes reutilizáveis (Header, Footer, etc.)
+│   ├── pages/        # Páginas principais (Home, Sobre, Projetos, etc.)
+│   ├── utils/        # Arquivos utilitários (temas, cores, etc.)
+│   ├── App.js        # Arquivo principal do React
+│   └── index.js      # Ponto de entrada do React
+└── package.json   # Gerenciador de dependências
 
-### Advanced Configuration
+Recursos e Funcionalidades
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Responsividade: Layout adaptado para diferentes tamanhos de tela.
 
-### Deployment
+Interatividade: Animações suaves e efeitos ao passar o mouse.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Integração Social: Links para redes sociais e e-mail.
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Design Moderno: Utilização de componentes estilizados com MUI e gradientes personalizados.
