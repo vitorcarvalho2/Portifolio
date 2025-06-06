@@ -1,7 +1,7 @@
 import { Box, Link, Typography } from "@mui/material";
 import { Colors, Gradients } from "../../utils/colors";
 
-function Links({ display, icon: Icon, href, hoverColor }) {
+function Links({ display, icon: Icon, href }) {
   return (
     <Box
       display="flex"
@@ -11,9 +11,10 @@ function Links({ display, icon: Icon, href, hoverColor }) {
         transition: "transform 0.5s ease-in-out",
         padding: 2,
         "&:hover": {
-          color: hoverColor || "inherit",
+          color:  "inherit",
           cursor: "pointer",
           transform: "scale(1.1)",
+          borderRadius: "50%",
           backgroundColor: Colors.backgroundColor,
           background: Gradients.linkGradient,
         },

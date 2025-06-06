@@ -1,6 +1,5 @@
 import { Box, Typography } from "@mui/material";
 import MyButton from "../MyButton";
-import { Colors, Gradients } from "../../utils/colors";
 
 const menuItems = [
   { text: "Home", target: "top" },
@@ -36,7 +35,7 @@ export function Header() {
         width: "100%",
         position: "fixed",
         zIndex: 100,
-        backgroundColor: Colors.secondaryColor,
+        backdropFilter: "blur(20px)", 
       }}
     >
       <Box
@@ -72,13 +71,6 @@ export function Header() {
           ))}
         </Box>
       </Box>
-      <Box
-        sx={{
-          background: Gradients.reversebackgroundGradient,
-          width: "100%",
-          minHeight: "8vh",
-        }}
-      />
     </Box>
   );
 }

@@ -78,7 +78,6 @@ function ItemsCarousel() {
         alignItems: "center",
         justifyContent: "space-evenly",
         height: "100%",
-        backgroundColor: Colors.backgroundColor,
         width: "100%",
         px: 4,
         py: 4,

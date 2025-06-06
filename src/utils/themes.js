@@ -4,26 +4,18 @@ const Theme = createTheme({
   typography: {
     fontFamily: "Preahvihear", 
   },
-  palette: {
-    primary: {
-      main: Colors.backgroundColor,
-    },
-    secondary: {
-      main: Colors.secondaryColor,
-    },
-  },
   components: {
     MuiTooltip: {
       styleOverrides: {
         tooltip: {
           fontSize: "1.2rem",       
           padding: "12px",          
-          backgroundColor: "#fff", 
-          color: Colors.secondaryColor,            
+          backgroundColor: Colors.backgroundColor, 
+          color: Colors.accentColor,            
           borderRadius: "8px",     
         },
         arrow: {
-          color: "#fff",            
+          color: Colors.backgroundColor,            
         }
       }
     }

@@ -39,31 +39,26 @@ function Contact() {
           display="LinkedIn"
           icon={LinkedInIcon}
           href="https://www.linkedin.com/in/vitor-oliveira-849816299/"
-          hoverColor=" #0077B5"
         />
         <Links
           display="GitHub"
           icon={GitHubIcon}
           href="https://github.com/vitorcarvalho2"
-          hoverColor="rgb(68, 65, 65)"
         />
         <Links
           display="Whatsapp"
           icon={WhatsAppIcon}
           href="https://wa.me/5534988627864"
-          hoverColor=" #25D366"
         />
         <Links
           display="Instagram"
           icon={InstagramIcon}
           href="https://www.instagram.com/vitorc.oliveira_/"
-          hoverColor=" #E4405F "
         />
         <Links
           display="Email"
           icon={EmailIcon}
           href=" mailto:vitorco.oliveira@gmail.com"
-          hoverColor=" #4285F4"
         />
       </Stack>
     </Box>

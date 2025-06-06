@@ -71,8 +71,8 @@ function Home() {
         >
           <Typography variant="h6" gutterBottom>
             Hi there! My name is{" "}
-            <span style={{ color: Colors.lightColor, fontWeight: "bold" }}>
-              Vitor
+            <span style={{ color: Colors.accentColor, fontWeight: "bold" }}>
+              Vitor Carvalho Oliveira
             </span>
           </Typography>
         </Box>
