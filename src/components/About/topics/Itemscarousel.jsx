@@ -1,7 +1,7 @@
 import { Box, ButtonBase } from "@mui/material";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
-import Colors from "../../../utils/colors";
+import { Colors, Gradients } from "../../../utils/colors";
 import { icons } from "../../../utils/icons";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { motion, animate, useMotionValue } from "framer-motion";
@@ -146,7 +146,7 @@ function ItemsCarousel() {
                   height: itemSize,
                   marginRight: itemSize,
                   flexShrink: 0,
-                  background: `radial-gradient(ellipse, ${Colors.thirdColor} 0%, ${Colors.secondaryColor} 70%, ${Colors.backgroundColor} 100%)`,
+                  background: Gradients.itemGradient,
                   borderRadius: "50%",
                 }}
                 whileHover={{ scale: 1.3 }}

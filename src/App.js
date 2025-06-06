@@ -3,7 +3,7 @@ import { Header } from "./components/Header/Header";
 import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
 import Contact from "./components/Contacts/Contact";
-import Colors from "./utils/colors";
+import { Colors, Gradients } from "./utils/colors";
 import Theme from "./utils/themes";
 import Home from "./components/Home/Home";
 
@@ -40,7 +40,7 @@ function App() {
 
         <Box classname="footer"
           sx={{
-            background: `linear-gradient(to bottom, ${Colors.backgroundColor} 0%, ${Colors.secondaryColor} 100%)`,
+            background: Gradients.backgroundGradient,
             width: "100%",
             minHeight: "10vh",
           }}

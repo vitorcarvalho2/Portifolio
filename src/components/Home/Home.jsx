@@ -1,6 +1,6 @@
 import { Box, Typography } from "@mui/material";
 import profileImage from "../../assets/images/profile.png";
-import Colors from "../../utils/colors";
+import { Gradients, Colors } from "../../utils/colors";
 
 function Home() {
   return (
@@ -29,7 +29,7 @@ function Home() {
             borderRadius: "50%",
             width: "250px",
             height: "250px",
-            background: `radial-gradient(circle, ${Colors.secondaryColor} 0%, ${Colors.backgroundColor} 100%)`,
+            background: Gradients.itemGradient,
             display: "flex",
             justifyContent: "center",
             alignItems: "center",

@@ -1,4 +1,6 @@
-const Colors = {
+import { link } from "motion/react-client";
+
+export const Colors = {
   backgroundColor: "rgb(31, 11, 30)",
   secondaryColor: "rgb(62, 18, 60)",
   thirdColor: "rgb(156, 58, 153)",
@@ -8,4 +10,9 @@ const Colors = {
   transparent: "rgba(0, 0, 0, 0)",
 };
 
-export default Colors;
+export const Gradients = {
+  backgroundGradient: `linear-gradient(to bottom, ${Colors.backgroundColor} 0%, ${Colors.secondaryColor} 50%, ${Colors.thirdColor} 100%)`,
+  reversebackgroundGradient: `linear-gradient(to bottom, ${Colors.secondaryColor} 0%, ${Colors.backgroundColor} 100%)`,
+  itemGradient: `radial-gradient(ellipse, ${Colors.thirdColor} 0%, ${Colors.secondaryColor} 50%, ${Colors.backgroundColor} 100%)`,
+  linkGradient: `radial-gradient(ellipse, ${Colors.secondaryColor} 0%, ${Colors.backgroundColor} 80%)`,
+};

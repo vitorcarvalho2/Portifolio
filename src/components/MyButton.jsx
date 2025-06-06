@@ -1,5 +1,5 @@
 import { Button } from "@mui/material";
-import Colors from "../utils/colors";
+import { Colors } from "../utils/colors";
 
 const buttonStyle = {
   color: "#fff",

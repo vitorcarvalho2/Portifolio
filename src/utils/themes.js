@@ -1,5 +1,5 @@
 import { createTheme } from "@mui/material/styles";
-import Colors from "./colors";
+import { Colors } from "./colors";
 const Theme = createTheme({
   typography: {
     fontFamily: "Preahvihear", 
