@@ -6,25 +6,26 @@ import Contact from "./components/Contacts/Contact";
 import Colors from "./utils/colors";
 import Theme from "./utils/themes";
 import Home from "./components/Home/Home";
+
+const reactScanScript = document.createElement('script');
+reactScanScript.src = "//unpkg.com/react-scan/dist/auto.global.js";
+reactScanScript.crossOrigin = "anonymous";
+reactScanScript.async = true;
+document.body.appendChild(reactScanScript);
+
 function App() {
   return (
     <ThemeProvider theme={Theme}>
       <Box
-        sx={{
-          backgroundColor: Colors.backgroundColor,
-          minHeight: "100vh",
-          width: "100%",
-        }}
+        backgroundColor={Colors.backgroundColor}
+        minHeight={"100vh"}
+        width="100%"
       >
-        <Box
-          sx={{
-            minHeight: "10vh",
-          }}
-        >
+        <Box minHeight={"10vh"}>
           <Header />
         </Box>
 
-        <Box>
+        <Box classname="content">
           <Home />
           <Box id="about">
             <About />
@@ -36,7 +37,8 @@ function App() {
             <Contact />
           </Box>
         </Box>
-        <Box
+
+        <Box classname="footer"
           sx={{
             background: `linear-gradient(to bottom, ${Colors.backgroundColor} 0%, ${Colors.secondaryColor} 100%)`,
             width: "100%",
