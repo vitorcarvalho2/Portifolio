@@ -5,7 +5,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import Links from "../Contacts/Links";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import InstagramIcon from "@mui/icons-material/Instagram";
-
+import Topics from "../Topics";
 function Contact() {
   return (
     <Box
@@ -20,11 +20,9 @@ function Contact() {
         margin: "auto",
       }}
     >
-      <Typography variant="h4" gutterBottom marginY={3}>
-        Contact
-      </Typography>
+      <Topics display="Contact" variant={"h3"} />
 
-      <Typography variant="h5" paragraph>
+      <Typography variant="h6">
         I'm currently looking to join a cross-functional team that values
         improving people's lives through accessible design. Or have a project in
         mind? Let's connect.

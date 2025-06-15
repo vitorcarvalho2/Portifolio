@@ -2,6 +2,7 @@ import { Box, Typography, Stack } from "@mui/material";
 import Tecnologies from "./topics/Tecnologies";
 import Experience from "./topics/Experience";
 import Academics from "./topics/Academics";
+import Topics from "../Topics";
 
 function About() {
   return (
@@ -16,9 +17,8 @@ function About() {
         margin: "auto",
       }}
     >
-      <Typography variant="h4" gutterBottom marginY={3}>
-        About Me
-      </Typography>
+      <Topics display="About Me" variant={"h3"} />
+      
       <Typography variant="h6">
         I'm a passionate and dedicated full-stack developer with a strong focus
         on creating user-friendly and visually appealing web experiences. With a

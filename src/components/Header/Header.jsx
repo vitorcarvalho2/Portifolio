@@ -1,5 +1,6 @@
 import { Box, Typography } from "@mui/material";
 import MyButton from "../MyButton";
+import { Colors } from "../../utils/colors";
 
 const menuItems = [
   { text: "Home", target: "top" },
@@ -47,8 +48,8 @@ export function Header() {
           padding: 2,
         }}
       >
-        <Typography variant="h3" sx={{ marginLeft: 4 }}>
-          Meu Portfólio
+        <Typography variant="h3" borderBottom={1} color={Colors.accentColor} sx={{ marginLeft: 4 }}>
+          My Portfolio
         </Typography>
         <Box
           sx={{

@@ -1,5 +1,5 @@
 import { Box, Link, Typography } from "@mui/material";
-import { Colors, Gradients } from "../../utils/colors";
+import { Colors } from "../../utils/colors";
 
 function Links({ display, icon: Icon, href }) {
   return (
@@ -14,9 +14,8 @@ function Links({ display, icon: Icon, href }) {
           color:  "inherit",
           cursor: "pointer",
           transform: "scale(1.1)",
-          borderRadius: "50%",
-          backgroundColor: Colors.backgroundColor,
-          background: Gradients.linkGradient,
+          borderRadius: "5px",
+          background: Colors.hoverColor,
         },
       }}
     >

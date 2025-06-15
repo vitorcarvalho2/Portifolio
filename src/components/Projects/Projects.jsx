@@ -1,4 +1,6 @@
 import { Box, Typography } from "@mui/material";
+import Topics from "../Topics";
+
 function Projects() {
   return (
     <Box
@@ -13,10 +15,18 @@ function Projects() {
         margin: "auto",
       }}
     >
-      <Typography variant="h4" gutterBottom marginY={3}>
-        Projects
-      </Typography>
-      <Box sx={{  display: "flex", width: "100%", margin: "auto", padding: 2, justifyContent: "center", alignContent: "center" }}>
+      <Topics display="Projects" variant={"h3"} />
+
+      <Box
+        sx={{
+          display: "flex",
+          width: "100%",
+          margin: "auto",
+          padding: 2,
+          justifyContent: "center",
+          alignContent: "center",
+        }}
+      >
         <Typography variant="h5">Soon...</Typography>
       </Box>
     </Box>

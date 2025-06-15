@@ -1,14 +1,12 @@
 import { Box, Typography } from "@mui/material";
-
+import Topics from "../../Topics";  
 function Experience() {
   return (
     <Box
       className="knowledge"
       sx={{ width: "100%", margin: "auto", padding: 2 }}
     >
-      <Typography variant="h5" gutterBottom marginY={3}>
-        Professional Experience
-      </Typography>
+      <Topics display="Professional Experience" variant={"h4"} />
       <Box
         className="experience"
         sx={{

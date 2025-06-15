@@ -2,7 +2,7 @@ import { Box, ButtonBase } from "@mui/material";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
 import { Colors, Gradients } from "../../../utils/colors";
-import { icons } from "../../../utils/icons";
+import { icons } from "../../../data/icons";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { motion, animate, useMotionValue } from "framer-motion";
 
@@ -105,13 +105,12 @@ function ItemsCarousel() {
             height: buttonSize,
             flexShrink: 0,
             zIndex: 10,
-            backgroundColor: Colors.secondaryColor,
             "&:hover": {
-              backgroundColor: Colors.primaryColor,
+              backgroundColor: Colors.hoverColor,
             },
           }}
         >
-          <ArrowBackIosNewIcon fontSize="large" sx={{ color: "white" }} />
+          <ArrowBackIosNewIcon fontSize="large" sx={{ color: Colors.accentColor }} />
         </ButtonBase>
 
         <Box
@@ -167,13 +166,12 @@ function ItemsCarousel() {
             height: buttonSize,
             flexShrink: 0,
             zIndex: 10,
-            backgroundColor: Colors.secondaryColor,
             "&:hover": {
-              backgroundColor: Colors.primaryColor,
+              backgroundColor: Colors.hoverColor,
             },
           }}
         >
-          <ArrowForwardIosIcon fontSize="large" sx={{ color: "white" }} />
+          <ArrowForwardIosIcon fontSize="large" sx={{ color: Colors.accentColor }} />
         </ButtonBase>
       </Box>
     </Box>

@@ -29,7 +29,7 @@ function Home() {
             borderRadius: "50%",
             width: "250px",
             height: "250px",
-            background: Gradients.itemGradient,
+            background: Gradients.perfilGradient,
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
@@ -42,7 +42,6 @@ function Home() {
             sx={{
               width: "210px",
               height: "210px",
-              backgroundColor: Colors.lightColor,
               display: "flex",
               justifyContent: "center",
               alignItems: "center",

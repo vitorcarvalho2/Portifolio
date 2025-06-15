@@ -1,5 +1,7 @@
-import { Box, Typography } from "@mui/material";
+import { Box } from "@mui/material";
 import Itemscarousel from "./Itemscarousel";
+
+import Topics from "../../Topics";
 
 function Tecnologies() {
   return (
@@ -15,9 +17,7 @@ function Tecnologies() {
         margin: "auto",
       }}
     >
-      <Typography variant="h5" gutterBottom marginY={3}>
-        Technologies
-      </Typography>
+      <Topics display="Technologies" variant={"h4"} />
       <Itemscarousel />
     </Box>
   );

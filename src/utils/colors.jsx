@@ -1,4 +1,4 @@
-export const Colors = {
+export const Colors1 = {
   // Roxo Profundo (Dark Purple)
   backgroundColor: "rgb(31, 11, 30)",
   secondaryColor: "rgb(62, 18, 60)",
@@ -78,9 +78,24 @@ export const Colors7 = { // Vinho + Rosa Poeira
   accentColor: "rgb(255, 200, 180)",
 };
 
+export const Colors = {
+  backgroundColor: "rgb(0, 0, 0)",
+  secondaryColor: "rgb(30, 30, 30)",
+  thirdColor: "rgb(49, 49, 49)",
+  lightColor: "rgb(162, 34, 247)",
+  hoverColor: " rgba(53, 90, 116, 0.3)",
+  footerColor: "rgb(74, 74, 74)",
+  textColor: "rgb(255, 240, 245)",
+  accentColor: "rgb(114, 196, 255)",
+  transparentaAcentColor: "rgba(114, 196, 255, 0.1)",
+  transparentColor: "rgba(0, 0, 0, 0)",
+};
+
 export const Gradients = {
   backgroundGradient: `linear-gradient(to bottom, ${Colors.backgroundColor} 0%, ${Colors.secondaryColor} 50%, ${Colors.thirdColor} 100%)`,
   reversebackgroundGradient: `linear-gradient(to bottom, ${Colors.secondaryColor} 0%, ${Colors.backgroundColor} 100%)`,
-  itemGradient: `radial-gradient(ellipse, ${Colors.textColor} 0%, ${Colors.secondaryColor} 50%, ${Colors.backgroundColor} 100%)`,
-  linkGradient: `radial-gradient(ellipse, ${Colors.footerColor} 0%, ${Colors.thirdColor} 70%, ${Colors.textColor} 90%)`,
+  perfilGradient: `radial-gradient(ellipse, ${Colors.lightColor} 0%, ${Colors.transparentColor} 70%, ${Colors.transparentColor} 100%)`,
+  itemGradient: `radial-gradient(ellipse, ${Colors.textColor} 0%, ${Colors.transparentColor} 70%, ${Colors.transparentColor} 100%)`,
+  backgroundCircleGradient: `radial-gradient(ellipse, ${Colors.footerColor} 0%, ${Colors.transparentColor} 70%, ${Colors.transparentColor} 100%)`,
+  topicsGradient: `linear-gradient(to bottom, ${Colors.lightColor} 0%, ${Colors.accentColor} 70%)`,
 };

@@ -1,4 +1,55 @@
 import { Box, Typography } from "@mui/material";
+import Topics from "../../Topics";
+import { Colors, Gradients } from "../../../utils/colors";
+import AutoStoriesIcon from "@mui/icons-material/AutoStories";
+import LocationOnIcon from "@mui/icons-material/LocationOn";
+import SchoolIcon from "@mui/icons-material/School";
+
+function MyAcademics({ local, title, subtitle }) {
+  return (
+    <Box
+      position="relative"
+      width="424px"
+      height="auto"
+      padding={2}
+      display="flex"
+      flexDirection="column"
+      borderRadius={4}
+      zIndex={2}
+      backgroundColor={Colors.transparentaAcentColor}
+      sx={{
+        backdropFilter: "blur(10px)",
+      }}
+    >
+      <Box display={"flex"} alignItems="center" gap={2} paddingY={1}>
+        <SchoolIcon fontSize="medium" />
+        <Typography variant="h6" sx={{ fontWeight: "bold" }}>
+          {title}
+        </Typography>
+      </Box>
+      <Box
+        display={"flex"}
+        alignItems="center"
+        gap={2}
+        paddingX={2}
+        paddingY={1}
+      >
+        <LocationOnIcon fontSize="small" />
+        <Typography variant="body1">{local}</Typography>
+      </Box>
+      <Box
+        display={"flex"}
+        alignItems="center"
+        gap={2}
+        paddingX={2}
+        paddingY={1}
+      >
+        <AutoStoriesIcon fontSize="small" />
+        <Typography variant="body1">{subtitle}</Typography>
+      </Box>
+    </Box>
+  );
+}
 
 function Academics() {
   return (
@@ -6,13 +57,12 @@ function Academics() {
       className="knowledge"
       sx={{ width: "100%", margin: "auto", padding: 2 }}
     >
-      <Typography variant="h5" gutterBottom marginY={3}>
-        Academic Background
-      </Typography>
+      <Topics display="Academic Background" variant={"h4"} />
       <Box
         className="experience"
         sx={{
           width: "100%",
+          height: "100%",
           margin: "auto",
           padding: 2,
           display: "flex",
@@ -21,36 +71,41 @@ function Academics() {
           justifyContent: "center",
           alignItems: "center",
           gap: 10,
+          position: "relative",
         }}
       >
-        <Box>
-          <Typography variant="h6">Ensino Médio Completo</Typography>
-          <Typography variant="body1">
-            Patrocínio, MG, Brazil | 2018 - 2020
-            <br />
-            Colégio ABC Anglo
-          </Typography>
-        </Box>
+        <Box
+          className="circle"
+          sx={{
+            background: Gradients.backgroundCircleGradient,
+            width: "500px",
+            height: "500px",
+            borderRadius: "50%",
+            position: "absolute",
+            top: "50%",
+            left: "50%",
+            zIndex: 0,
+            transform: "translate(-50%, -50%)",
+          }}
+        ></Box>
 
-        <Box>
-          <Typography variant="h6">English language course</Typography>
-          <Typography variant="body1">
-            Patrocínio, MG, Brazil | 2014 - 2020
-            <br />
-            Centro de cultura anglo americana CCAA
-          </Typography>
-        </Box>
+        <MyAcademics
+          title="High School"
+          local="Patrocínio, MG, Brazil | 2018 - 2020"
+          subtitle="Colégio Educacional ABC Anglo"
+        />
 
-        <Box>
-          <Typography variant="h6">
-            Bachelor's degree in Computer Science
-          </Typography>
-          <Typography variant="body1">
-            Jataí, GO, Brazil | 2021 - 2024
-            <br />
-            Universidade Federal de Jataí
-          </Typography>
-        </Box>
+        <MyAcademics
+          title="English Language Course"
+          local="Patrocínio, MG, Brazil | 2014 - 2020"
+          subtitle="Centro de Cultura Anglo Americana - CCAA"
+        />
+
+        <MyAcademics
+          title="Bachelor's Degree in Computer Science"
+          local="Jataí, GO, Brazil | 2021 - 2024"
+          subtitle="Universidade Federal de Jataí - UFJ"
+        />
       </Box>
     </Box>
   );
