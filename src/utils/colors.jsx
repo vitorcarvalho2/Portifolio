@@ -76,7 +76,7 @@ export const Colors7 = {
 };
 
 export const Colors = {
-  backgroundColor: "rgb(0, 0, 0)",
+  backgroundColor: "rgb(10, 10, 10)",
   secondaryColor: "rgb(30, 30, 30)",
   thirdColor: "rgb(49, 49, 49)",
   lightColor: "rgb(162, 34, 247)",

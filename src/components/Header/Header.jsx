@@ -36,7 +36,9 @@ export function Header() {
         width: "100%",
         position: "fixed",
         zIndex: 100,
-        backdropFilter: "blur(20px)", 
+        backdropFilter: "blur(20px)",
+        boxShadow: "0 4px 30px rgba(0, 0, 0, 0.1)",
+        borderBottom: "1px solid rgba(255, 255, 255, 0.1)",
       }}
     >
       <Box
@@ -45,11 +47,37 @@ export function Header() {
           flexDirection: "row",
           alignItems: "center",
           gap: 2,
-          padding: 2,
+          padding: "1rem 2rem",
+          maxWidth: "1400px",
+          margin: "0 auto",
+          width: "100%",
         }}
       >
-        <Typography variant="h3" borderBottom={1} color={Colors.accentColor} sx={{ marginLeft: 4 }}>
-          My Portfolio
+        <Typography
+          variant="h3"
+          sx={{
+            marginLeft: 4,
+            color: Colors.accentColor,
+            fontWeight: 700,
+            letterSpacing: "1px",
+            position: "relative",
+            "&::after": {
+              content: '""',
+              position: "absolute",
+              bottom: "-5px",
+              left: 0,
+              width: "100%",
+              height: "2px",
+              background: `linear-gradient(90deg, ${Colors.accentColor} 0%, transparent 100%)`,
+              transform: "scaleX(0.8)",
+              transition: "transform 0.3s ease-in-out",
+            },
+            "&:hover::after": {
+              transform: "scaleX(1)",
+            },
+          }}
+        >
+          Portfolio
         </Typography>
         <Box
           sx={{
@@ -57,7 +85,7 @@ export function Header() {
             flexDirection: "row",
             marginLeft: "auto",
             marginRight: "100px",
-            gap: 2,
+            gap: 3,
           }}
         >
           {menuItems.map((item) => (

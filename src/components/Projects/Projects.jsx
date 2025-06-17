@@ -27,7 +27,9 @@ function Projects() {
           alignContent: "center",
         }}
       >
-        <Typography variant="h5">Soon...</Typography>
+        <Typography variant="h5">
+          Soon...
+        </Typography>
       </Box>
     </Box>
   );

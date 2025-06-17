@@ -3,7 +3,7 @@ import Tecnologies from "./topics/Tecnologies";
 import Experience from "./topics/Experience";
 import Academics from "./topics/Academics";
 import Topics from "../Topics";
-import { Colors, Gradients } from "../../utils/colors";
+import { Colors } from "../../utils/colors";
 
 function About() {
   return (
@@ -29,11 +29,7 @@ function About() {
           background: `linear-gradient(145deg, ${Colors.secondaryColor}, ${Colors.thirdColor})`,
           border: `1px solid ${Colors.lightColor}`,
           borderRadius: 2,
-          "&:hover": {
-            transform: "translateY(-8px)",
-            boxShadow: `0 8px 20px ${Colors.hoverColor}`,
-            background: `linear-gradient(145deg, ${Colors.thirdColor}, ${Colors.secondaryColor})`,
-          },
+          boxShadow: `0 8px 20px ${Colors.hoverColor}`,
         }}
       >
         <Typography
