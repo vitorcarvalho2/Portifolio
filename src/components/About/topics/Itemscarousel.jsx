@@ -79,8 +79,6 @@ function ItemsCarousel() {
         justifyContent: "space-evenly",
         height: "100%",
         width: "100%",
-        px: 4,
-        py: 4,
         position: "relative",
       }}
     >
@@ -105,9 +103,7 @@ function ItemsCarousel() {
             height: buttonSize,
             flexShrink: 0,
             zIndex: 10,
-            background: `linear-gradient(135deg, 
-              rgba(114, 196, 255, 0.2) 0%,
-              rgba(162, 34, 247, 0.2) 100%)`,
+            background: Gradients.itemGradient,
             backdropFilter: "blur(8px)",
             border: "1px solid rgba(255, 255, 255, 0.2)",
             transition: "all 0.3s ease",
@@ -128,7 +124,8 @@ function ItemsCarousel() {
             overflow: "hidden",
             height: itemSize * 1.5,
             maxWidth: "500px",
-            padding: 2,
+            padding: 4,
+            paddingX: 8,
             justifyContent: "center",
             alignItems: "center",
           }}
@@ -146,6 +143,7 @@ function ItemsCarousel() {
                 key={index}
                 style={{
                   display: "flex",
+                  overflow: "visible",
                   alignItems: "center",
                   justifyContent: "center",
                   width: itemSize,
