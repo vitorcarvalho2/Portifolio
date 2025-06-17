@@ -105,8 +105,16 @@ function ItemsCarousel() {
             height: buttonSize,
             flexShrink: 0,
             zIndex: 10,
+            background: `linear-gradient(135deg, 
+              rgba(114, 196, 255, 0.2) 0%,
+              rgba(162, 34, 247, 0.2) 100%)`,
+            backdropFilter: "blur(8px)",
+            border: "1px solid rgba(255, 255, 255, 0.2)",
+            transition: "all 0.3s ease",
             "&:hover": {
-              backgroundColor: Colors.hoverColor,
+              transform: "scale(1.1)",
+              boxShadow: "0 0 20px rgba(114, 196, 255, 0.3)",
+              background: Gradients.itemGradient,
             },
           }}
         >
@@ -146,8 +154,14 @@ function ItemsCarousel() {
                   flexShrink: 0,
                   background: Gradients.itemGradient,
                   borderRadius: "50%",
+                  boxShadow: "0 4px 20px rgba(0, 0, 0, 0.2)",
                 }}
-                whileHover={{ scale: 1.3 }}
+                whileHover={{ 
+                  scale: 1.2,
+                  boxShadow: "0 8px 32px rgba(114, 196, 255, 0.3)",
+                  background: Gradients.itemGradient,
+                  transition: { duration: 0.3 },
+                }}
               >
                 {icon}
               </motion.div>
@@ -166,8 +180,13 @@ function ItemsCarousel() {
             height: buttonSize,
             flexShrink: 0,
             zIndex: 10,
+            background: Gradients.itemGradient,
+            border: "1px solid rgba(255, 255, 255, 0.2)",
+            transition: "all 0.3s ease",
             "&:hover": {
-              backgroundColor: Colors.hoverColor,
+              transform: "scale(1.1)",
+              boxShadow: "0 0 20px rgba(114, 196, 255, 0.3)",
+              background: Gradients.itemGradient,
             },
           }}
         >

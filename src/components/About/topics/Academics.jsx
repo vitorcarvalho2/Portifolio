@@ -4,50 +4,80 @@ import { Colors, Gradients } from "../../../utils/colors";
 import AutoStoriesIcon from "@mui/icons-material/AutoStories";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import SchoolIcon from "@mui/icons-material/School";
+import { motion } from "framer-motion";
 
 function MyAcademics({ local, title, subtitle }) {
   return (
-    <Box
-      position="relative"
-      width="424px"
-      height="auto"
-      padding={2}
-      display="flex"
-      flexDirection="column"
-      borderRadius={4}
-      zIndex={2}
-      backgroundColor={Colors.transparentaAcentColor}
-      sx={{
-        backdropFilter: "blur(10px)",
-      }}
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
+      viewport={{ once: true }}
     >
-      <Box display={"flex"} alignItems="center" gap={2} paddingY={1}>
-        <SchoolIcon fontSize="medium" />
-        <Typography variant="h6" sx={{ fontWeight: "bold" }}>
-          {title}
-        </Typography>
-      </Box>
       <Box
-        display={"flex"}
-        alignItems="center"
-        gap={2}
-        paddingX={2}
-        paddingY={1}
+        position="relative"
+        width="424px"
+        height="auto"
+        padding={2}
+        display="flex"
+        flexDirection="column"
+        borderRadius={4}
+        zIndex={2}
+        backgroundColor={Colors.transparentaAcentColor}
+        sx={{
+          backdropFilter: "blur(10px)",
+          transition: "transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out",
+          "&:hover": {
+            transform: "translateY(-5px)",
+            boxShadow: "0 8px 16px rgba(0,0,0,0.2)",
+          },
+        }}
       >
-        <LocationOnIcon fontSize="small" />
-        <Typography variant="body1">{local}</Typography>
+        <Box 
+          display={"flex"} 
+          alignItems="center" 
+          gap={2} 
+          paddingY={1}
+          sx={{
+            borderBottom: `2px solid ${Colors.accentColor}`,
+            marginBottom: 1
+          }}
+        >
+          <SchoolIcon fontSize="medium" sx={{ color: Colors.accentColor }} />
+          <Typography 
+            variant="h6" 
+            sx={{ 
+              fontWeight: "bold",
+              background: Gradients.topicsGradient,
+              WebkitBackgroundClip: "text",
+              WebkitTextFillColor: "transparent",
+            }}
+          >
+            {title}
+          </Typography>
+        </Box>
+        <Box
+          display={"flex"}
+          alignItems="center"
+          gap={2}
+          paddingX={2}
+          paddingY={1}
+        >
+          <LocationOnIcon fontSize="small" sx={{ color: Colors.accentColor }} />
+          <Typography variant="body1">{local}</Typography>
+        </Box>
+        <Box
+          display={"flex"}
+          alignItems="center"
+          gap={2}
+          paddingX={2}
+          paddingY={1}
+        >
+          <AutoStoriesIcon fontSize="small" sx={{ color: Colors.accentColor }} />
+          <Typography variant="body1">{subtitle}</Typography>
+        </Box>
       </Box>
-      <Box
-        display={"flex"}
-        alignItems="center"
-        gap={2}
-        paddingX={2}
-        paddingY={1}
-      >
-        <AutoStoriesIcon fontSize="small" />
-        <Typography variant="body1">{subtitle}</Typography>
-      </Box>
-    </Box>
+    </motion.div>
   );
 }
 
@@ -55,7 +85,13 @@ function Academics() {
   return (
     <Box
       className="knowledge"
-      sx={{ width: "100%", margin: "auto", padding: 2 }}
+      sx={{ 
+        width: "100%", 
+        margin: "auto", 
+        padding: 2,
+        position: "relative",
+        overflow: "hidden"
+      }}
     >
       <Topics display="Academic Background" variant={"h4"} />
       <Box
@@ -74,7 +110,17 @@ function Academics() {
           position: "relative",
         }}
       >
-        <Box
+        <motion.div
+          initial={{ scale: 0.8, opacity: 0 }}
+          animate={{ scale: 1, opacity: 1 }}
+          transition={{ duration: 3, repeat: Infinity, repeatType: "reverse" }}
+          style={{
+            position: "absolute",
+            
+          }}
+          
+        >
+          <Box
           className="circle"
           sx={{
             background: Gradients.backgroundCircleGradient,
@@ -87,7 +133,8 @@ function Academics() {
             zIndex: 0,
             transform: "translate(-50%, -50%)",
           }}
-        ></Box>
+        />
+        </motion.div>
 
         <MyAcademics
           title="High School"
